@@ -16,7 +16,7 @@ const TabIcon = ({
   return focused ? (
     <ImageBackground
       source={images.highlight}
-      className="flex flex-row min-w-[112px] min-h-14 mt-4 justify-center items-center rounded-full overflow-hidden"
+      className="flex flex-row min-w-[138px] min-h-14 mt-4 justify-center items-center rounded-full overflow-hidden"
     >
       <Image className="size-5" tintColor="#151312" source={icon} />
       <Text className="text-secondary text-base font-semibold ml-2">
@@ -65,7 +65,7 @@ const _Layout = () => {
           ),
         }}
       />
-      <Tabs.Screen
+      {/* <Tabs.Screen
         name="search"
         options={{
           title: "Search",
@@ -74,7 +74,7 @@ const _Layout = () => {
             <TabIcon focused={focused} title={"Search"} icon={icons.search} />
           ),
         }}
-      />
+      /> */}
       <Tabs.Screen
         name="saved"
         options={{

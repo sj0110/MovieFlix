@@ -16,11 +16,12 @@ interface Movie {
 }
 
 interface TrendingMovie {
+  $id: string;
   searchTerm: string;
-  movie_id: number;
+  movieId: number;
   title: string;
   count: number;
-  poster_url: string;
+  posterURL: string;
 }
 
 interface MovieDetails {
